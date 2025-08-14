@@ -16,13 +16,13 @@ h1 {
  padding: 0px 110px 20px 110px;
 }
 .logo {
-  width: 1500px;
+  width: 1300px;
   text-align: center;
   padding: 200px 0px 200px 200px;
 }
 
 .profile {
- background-color: rgb(192, 224, 205);
+ background-color: black;
  padding: 20px 20px;
 }
 .profile-title {
