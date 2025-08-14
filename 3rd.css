@@ -22,7 +22,7 @@ h1 {
 }
 
 .profile {
- background-color: rgb(192, 224, 205);
+  background-color: green; 
  padding: 20px 20px;
 }
 .profile-title {
