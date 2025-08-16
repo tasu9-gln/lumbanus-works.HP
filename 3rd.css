@@ -12,11 +12,11 @@ h1 {
  font-weight: 400;
 }
 .title-text {
- font-size: 1em;
+ font-size: 0.01em;
  padding: 0px 110px 20px 110px;
 }
 .logo {
- mac-width: 1230px 
+ mac-width: 1230px;
  width: 100%;
  height: auto;
   text-align: center;
