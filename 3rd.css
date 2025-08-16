@@ -12,7 +12,7 @@ h1 {
  font-weight: 400;
 }
 .title-text {
- font-size: 0.01em;
+ font-size: 1em;
  padding: 0px 110px 20px 110px;
 }
 .logo {
@@ -64,7 +64,7 @@ h1 {
         padding: 10px 0px 10px 20px
       }
       .title-text {
-       font-size: 0.01em;
+       font-size: 0.005em;
        padding: 0px 0px 10px 20px;
       }
 
