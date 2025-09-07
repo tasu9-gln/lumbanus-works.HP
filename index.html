@@ -2,25 +2,111 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="3rd.css">
-    <title>LumbanusWORKS_HP</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUMBANUS WORKS</title>
+
+  
+<!-- Google Fonts は link タグで読み込む -->
+  <link rel="ts.googleapis.comhttps://fonts.gstatic.com>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="esheet" href="styles.css" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <section id="title">
-        <img class="logo" src="LUMBANUS-WORKsgr.png">
-        <p class="title-text">アーティストステイトメントアーティストステイトメントアーティストステイトメントアーティストステイトメントアーティストステイトメントアーティストステイトメントアーティストステイトメント<br>ここはルンバヌス・ワークスのホームページです。</p>
-        <link rel="stylesheet" href="https://use</section>
+  <header class="site-header">
+    <img src="images/LUMBANUS-WORKsgr.png"
+         alt="LUMBANUS WORKS ロゴ"
+         class="logo"/>
 
-    <section class="profile">
-        <h2 class="profile-title">ABOUT</h2>
-        <p class="profile-text">2006.09.26以下のプロジェクトを進行中！</p>
-    </section>
+     <!-- ヘッダー内に追加 -->
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 
+<nav class="nav-menu" id="navMenu">
+  <a href="#">ホーム</a>
+  <a href="#works">作品</a>
+  <a href="#about">プロフィール</a>
+  <a href="#contact">お問い合わせ</a>
+  <a href="#support">支援</a>
+</nav>
 
-    <footer class="footer">
-        <p class="footer-text">クレジット</p>
-    </footer>
+    </div>
+    
+    
+  </header>
+
+  <!-- ドロワーメニュー -->
+  <nav id="drawer" class="drawer" hidden>
+    <div class="drawer__inner" role="dialog" aria-label="サイトメニュー">
+      <button class="drawer__close" id="btnMenuClose" aria-label="メニューを閉じる">×</button>
+      <div id="searchPanel" class="search-panel__inner">
+  <input type="text" id="searchInput" placeholder="検索...">
+  <div class="search-panel__actions">
+    <button id="searchPrev">←</button>
+    <button id="searchNext">→</button>
+    <button id="searchClear">クリア</button>
+    <span id="searchCount">0/0</span>
+  </div>
+</div>
+      <ul class="drawer__list">
+        <li><a href="/">ホーム</a></li>
+        <li><a href="#works">作品</a></li>
+        <li><a href="#about">プロフィール</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li><a href="#support">支援</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="slider">
+    <div class="slides">
+     <img src="images/batanque.png" data-title="LIE is DIE" data-desc="寝たら終わり。">
+     <img src="images/NEILA.png" data-title="NEILA" data-desc="愛とユーモアの物語">
+     <img src="images/phone.png" data-title="Phoneの虫" data-desc="これが今">
+   </div>
+  <button id="prevBtn" class="nav prev">‹</button>
+  <button id="nextBtn" class="nav next">›</button>
+  <div class="caption">
+    <h3 class="caption__title"></h3>
+    <p class="caption__desc"></p>
+  </div>
+  <div class="dots"></div>
+</div>
+
+ <footer class="site-footer">
+  <ul class="footer-links">
+    <li><a href="/">ホーム</a></li>
+    <li><a href="#works">作品</a></li>
+    <li><a href="#about">プロフィール</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+    <li><a href="#support">支援</a></li>
+  </ul>
+  <div class="footer-icons">
+    <!-- アイコン画像など -->
+  </div>
+  <p>© LUMBANUS WORKS</p>
+</footer>
+
+  <!-- 検索パネル -->
+  <div id="searchPanel" class="search-panel" hidden>
+    <div class="search-panel__inner" role="dialog" aria-label="ページ内検索">
+      <input id="searchInput" type="search" placeholder="ページ内を検索" aria-label="検索語を入力" />
+      <div class="search-panel__actions">
+        <button id="searchPrev" aria-label="前を検索">前</button>
+        <button id="searchNext" aria-label="次を検索">次</button>
+        <span id="searchCount" aria-live="polite">0/0</span>
+        <button id="searchClear" aria-label="ハイライトをクリア">クリア</button>
+        <button id="searchClose" aria-label="検索を閉じる">閉じる</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
